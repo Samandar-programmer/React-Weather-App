@@ -74,11 +74,11 @@ const App = function(props) {
         }
     }
     function mainBg() {
-        if(now.getHours() <= 18 && now.getHours() >= 14) {
+        if(now.getHours() <= 19 && now.getHours() >= 16) {
             return {backgroundImage: 'linear-gradient(to top, #82657b, #e49dad, #82657b)'}
-        } else if(now.getHours() >= 6 && now.getHours() < 14) {
+        } else if(now.getHours() >= 8 && now.getHours() < 16) {
             return {backgroundImage: 'linear-gradient(-150deg, #59b8cc, #e2e2c7)'}
-        } else if(now.getHours() > 18 || now.getHours() < 6) {
+        } else if(now.getHours() > 19 || now.getHours() < 8) {
             return {backgroundImage: 'linear-gradient(to top, #1f0d33, #313165, #1f0d33)'}
         }
     }
@@ -89,7 +89,7 @@ const App = function(props) {
                 <div className={mainobj()}></div>
                 <div className="mainBg" style={mainBg()}></div>
                 <div className="mountain--container">
-                    <img src={mountain} className="mountain"></img>
+                    {/* <img src={mountain} className="mountain"></img> */}
                 </div>
                 <div className="header">
                     <h1>Weather App</h1>
